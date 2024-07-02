@@ -18,9 +18,25 @@
             <p>Trump Votes: <span id="trump-count">0</span></p>
         </div>
     </div>
-    <!-- Firebase -->
+    <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script>
+        // Your Firebase configuration (replace with your actual config object)
+        const firebaseConfig = {
+            apiKey: "AIzaSyCYPfLB_SoA4sMKaU1pdqb1ZIU8ZTHJ84k",
+            authDomain: "miniprediction-56755.firebaseapp.com",
+            projectId: "miniprediction-56755",
+            storageBucket: "miniprediction-56755.appspot.com",
+            messagingSenderId: "778900239500",
+            appId: "1:778900239500:web:bf88e77d7468de9aecf7a9",
+            measurementId: "G-18TBJ2HCFZ"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
